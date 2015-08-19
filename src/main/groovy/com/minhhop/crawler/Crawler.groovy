@@ -2,7 +2,7 @@ package com.minhhop.crawler
 
 /**
  * <p>A Web crawler is an Internet bot which systematically browses the World Wide Web, typically for the purpose of Web indexing. A Web crawler may also be called a Web spider,[1] an ant, an automatic indexer,[2] or (in the FOAF software context) a Web scutter</p>
- * <p>This is how you start using Cralwer with HtmlUnit or Selenium
+ * <p>This is how you start using Crawler with HtmlUnit or Selenium
  *
  * <pre> JCrawler crawler = JCrawler.setup(Crawler.Kind.WEBCLIENT, null);
  *       crawler.go "http://google.com"

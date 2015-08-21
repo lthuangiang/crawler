@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Crawler by lthuangiang</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Crawler</h1>
+        <h2>Web Crawler with HtmlUnit/Selenium</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/lthuangiang/crawler/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/lthuangiang/crawler/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/lthuangiang/crawler" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="web-crawler-with-htmlunitselenium" class="anchor" href="#web-crawler-with-htmlunitselenium" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web Crawler with HtmlUnit/Selenium</h1>
+
+<p><img src="http://www.pixelroaddesigns.com/wrdp/wp-content/uploads/2013/05/6-7-2013-1-35-19-PM-300x300.jpg"></p>
+
+<p>A Web crawler is an Internet bot which systematically browses the World Wide Web, typically for the purpose of Web indexing. A Web crawler may also be called a Web spider,[1] an ant, an automatic indexer,[2] or (in the FOAF software context) a Web scutter</p>
+
+<p>Set of classes in <code>com.minhhop.crawler</code> package is
+an object oriented of Crawler which try to cover as much as possible of HtmlUnit/Selenium</p>
+
+<div class="highlight highlight-java"><pre><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">Main</span> {
+  <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">void</span> <span class="pl-en">main</span>(<span class="pl-k">String</span>[] <span class="pl-v">args</span>) {
+    <span class="pl-smi">Crawler</span> crawler <span class="pl-k">=</span> <span class="pl-smi">JCrawler</span><span class="pl-k">.</span>setup(<span class="pl-smi">Crawler</span><span class="pl-k">.</span><span class="pl-smi">Kind</span><span class="pl-c1"><span class="pl-k">.</span>WEBCLIENT</span>, <span class="pl-c1">null</span>);
+    crawler<span class="pl-k">.</span>go (<span class="pl-s"><span class="pl-pds">"</span>http://google.com<span class="pl-pds">"</span></span>);
+  }
+}</pre></div>
+
+<h1>
+<a id="how-to-use-maven" class="anchor" href="#how-to-use-maven" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use (Maven)</h1>
+
+<ul>
+<li>Add the following snippet to any project's pom that depends on your project</li>
+</ul>
+
+<div class="highlight highlight-xml"><pre>  &lt;<span class="pl-ent">repository</span>&gt;
+            &lt;<span class="pl-ent">id</span>&gt;crawler-mvn-repo&lt;/<span class="pl-ent">id</span>&gt;
+            &lt;<span class="pl-ent">url</span>&gt;https://raw.github.com/lthuangiang/crawler/mvn-repo/&lt;/<span class="pl-ent">url</span>&gt;
+            &lt;<span class="pl-ent">snapshots</span>&gt;
+                &lt;<span class="pl-ent">enabled</span>&gt;true&lt;/<span class="pl-ent">enabled</span>&gt;
+                &lt;<span class="pl-ent">updatePolicy</span>&gt;always&lt;/<span class="pl-ent">updatePolicy</span>&gt;
+            &lt;/<span class="pl-ent">snapshots</span>&gt;
+  &lt;/<span class="pl-ent">repository</span>&gt;</pre></div>
+
+<ul>
+<li>The dependency you need is</li>
+</ul>
+
+<div class="highlight highlight-xml"><pre>  &lt;<span class="pl-ent">dependency</span>&gt;
+            &lt;<span class="pl-ent">groupId</span>&gt;com.minhhop.crawler&lt;/<span class="pl-ent">groupId</span>&gt;
+            &lt;<span class="pl-ent">artifactId</span>&gt;cralwer&lt;/<span class="pl-ent">artifactId</span>&gt;
+            &lt;<span class="pl-ent">version</span>&gt;1.2-SNAPSHOT&lt;/<span class="pl-ent">version</span>&gt;
+  &lt;/<span class="pl-ent">dependency</span>&gt;</pre></div>
+
+<h2>
+<a id="system-requirements" class="anchor" href="#system-requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>SYSTEM REQUIREMENTS</h2>
+
+<p>Reucon-Commons needs a Java Virtual Machine of at least version 1.7 (<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java SE 7.0</a>).
+If you want to build the jar from source, you will also need <a href="http://maven.apache.org/">Maven</a>.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
